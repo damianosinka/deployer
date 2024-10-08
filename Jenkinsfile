@@ -4,7 +4,7 @@ pipeline {
 
     parameters {
         choice(choices: ['pp-liabilities', 'pp-credits'], description: 'What MS?', name: 'ms')
-	  choice(choices: ['dev', 'uat', 'pp'], description: 'What environment?', name: 'env')
+	choice(choices: ['dev', 'uat', 'pp'], description: 'What environment?', name: 'env')
         choice(choices: ['kluster1', 'kluster2', 'kluster3'], description: 'What cluster?', name: 'cluster')
     }
 
