@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage("deploy") {
             steps {
-                echo "Deploing ${params.ms} to environment ${params.env} in cluster ${cluster}"
+                echo "Deploing ${params.ms} to environment ${params.env} in cluster ${params.cluster}"
             }
         }
     }
